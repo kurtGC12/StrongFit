@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Remember Bootstrap Template</title>
+  <title>StrongFit</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="logo">
+  <link rel="icon" href="assets/img/logo.png">
+ 
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,12 +28,11 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-
 </head>
 
-<body class="registro">
+<body class="perfil">
 
-    <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <!-- Logo + nombre -->
@@ -44,54 +44,57 @@
       <!-- Menú de navegación -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Inicio</a></li>
-          <li><a href="#about">Nosotros</a></li>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="index.html">Nosotros</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="planes.html">Planes</a></li>
-          <li><a href="#contact">Contacto</a></li>          
+          <li><a href="index.html">Contacto</a></li>          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <!-- Botones de acción -->
       <div class="d-flex align-items-center gap-3">
-        <a class="btn-getstarted" href="rregistro.html">Inscríbete</a>
-        <a class="bi bi-person fs-4" href="#login" title="Mi cuenta"></a>
+        <a class="btn-getstarted" href="registro.html">Inscríbete</a>
+        <a class="bi bi-person fs-4" href="login.html" title="Mi cuenta"></a>
       </div>
 
     </div>
   </header>
 
-  <main class="main">
+    <main class="container my-5">
+    <h1 class="text-center mb-4">Editar Perfil</h1>
+    <form id="form-perfil" class="formulario-strongfit" novalidate>
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre completo</label>
+    <input type="text" class="form-control" id="nombre" required>
+    <div class="invalid-feedback">Este campo es obligatorio.</div>
+  </div>
 
-    <!-- Page Title -->
-    <div class="page-title light-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Starter Page</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+  <div class="mb-3">
+    <label for="usuario" class="form-label">Nombre de usuario</label>
+    <input type="text" class="form-control" id="usuario" required>
+    <div class="invalid-feedback">Nombre de usuario requerido.</div>
+  </div>
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="email" disabled>
+    <div class="form-text">Este dato no puede modificarse.</div>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <div><span>Check Our</span> <span class="description-title">Starter Section</span></div>
-      </div><!-- End Section Title -->
+  <div class="mb-3">
+    <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+    <input type="date" class="form-control" id="fechaNacimiento" required>
+    <div class="invalid-feedback">Este campo es obligatorio.</div>
+  </div>
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div>
 
-    </section><!-- /Starter Section Section -->
-
+  <div class="d-flex justify-content-between">
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    <a href="login.html" class="btn btn-secondary">Cerrar sesión</a>
+  </div>
+</form>
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -176,6 +179,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/perfil.js"></script>
 
 </body>
 

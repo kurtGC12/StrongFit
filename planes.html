@@ -10,7 +10,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="logo">
-  <link href="assets/img/logo.png" rel="logo">
+  <link rel="icon" href="assets/img/logo.png">
  
 
   <!-- Fonts -->
@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="planes>
+<body class="planes">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -56,7 +56,7 @@
       <!-- Botones de acción -->
       <div class="d-flex align-items-center gap-3">
         <a class="btn-getstarted" href="registro.html">Inscríbete</a>
-        <a class="bi bi-person fs-4" href="#login" title="Mi cuenta"></a>
+        <a class="bi bi-person-fill fs-4" href="login.html" title="Mi cuenta"></a>
       </div>
 
     </div>
@@ -101,7 +101,7 @@
             <li class="na"><i class="bi bi-x"></i> <span>Descuentos en convenios</span></li>
             <li class="na"><i class="bi bi-x"></i> <span>Regalos promocionales</span></li>
           </ul>
-          <div class="text-center"><a href="#" class="buy-btn">Contratar</a></div>
+          <div class="text-center"><a href="#" class="buy-btn btn btn-primary" data-nombre="Plan Mensual" data-precio="35000">Contratar</a></div>
         </div>
       </div><!-- End Pricing Item -->
 
@@ -117,7 +117,7 @@
             <li><i class="bi bi-check"></i> Plan de entrenamiento personalizado</li>
             <li class="na"><i class="bi bi-x"></i> <span>Regalo promocional anual</span></li>
           </ul>
-          <div class="text-center"><a href="#" class="buy-btn">Contratar</a></div>
+          <div class="text-center"><a href="#" class="buy-btn btn btn-primary" data-nombre="Plan Semestral" data-precio="180000">Contratar</a></div>
         </div>
       </div><!-- End Pricing Item -->
 
@@ -133,7 +133,10 @@
             <li><i class="bi bi-check"></i> Regalo promocional de bienvenida</li>
             <li><i class="bi bi-check"></i> 1 sesión mensual con personal trainer</li>
           </ul>
-          <div class="text-center"><a href="#" class="buy-btn">Contratar</a></div>
+          <div class="text-center">
+  <a href="#" class="buy-btn btn btn-primary" data-nombre="Plan Anual" data-precio="330000">Contratar</a>
+  
+</div>
         </div>
       </div><!-- End Pricing Item -->
 
@@ -149,7 +152,7 @@
 
   </main>
 
- <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -168,8 +171,8 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Link</h4>
           <ul>
-            <li><a href="#hero">Incio</a></li>
-            <li><a href="#about">Nosotros</a></li>
+            <li><a href="index.html">Incio</a></li>
+            <li><a href="index.html">Nosotros</a></li>
             <li><a href="servicios.html">Servicios</a></li>
             <li><a href="planes.html">Planes</a></li>
           </ul>
@@ -212,7 +215,10 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+   
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/carrito.js"></script>
+
 
 </body>
 

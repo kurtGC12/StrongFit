@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -29,7 +30,7 @@
 
 </head>
 
-<body class="registro">
+<body class="recuperar">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -62,69 +63,31 @@
   </header>
 
   <main class="container my-5">
-  <div class="row align-items-center">
-    
-    <!-- Formulario -->
-    <div class="col-lg-6">
-      <h1 class="text-center mb-4" style="color: #0ac472;">Formulario de Inscripción</h1>
-      <p class="text-center lead text-muted">Completa tus datos para unirte a <strong>StrongFit</strong></p>
-
-      <form id="formulario-inscripcion" class="formulario-strongfit" novalidate>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre completo</label>
-          <input type="text" class="form-control" id="nombre" required>
-          <div class="invalid-feedback">Este campo es obligatorio.</div>
-        </div>
-
-        <div class="mb-3">
-          <label for="usuario" class="form-label">Nombre de usuario</label>
-          <input type="text" class="form-control" id="usuario" required>
-          <div class="invalid-feedback">Ingresa un nombre de usuario válido.</div>
-        </div>
-
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" required>
-          <div class="invalid-feedback">Correo electrónico inválido.</div>
-        </div>
-
-        <div class="mb-3">
-          <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
-          <input type="date" class="form-control" id="fechaNacimiento" required>
-          <div class="invalid-feedback">Debes tener al menos 13 años.</div>
-        </div>
-
-        <div class="mb-3">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" required
-            pattern="(?=.*\d)(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,20}"
-            title="Debe tener entre 8 y 20 caracteres, incluir una mayúscula, un número y un símbolo especial (!@#$%^&*).">
-          <div class="invalid-feedback">Debe tener entre 8 y 20 caracteres, 1 mayúscula, 1 número y 1 símbolo especial.</div>
-        </div>
-
-        <div class="mb-3">
-          <label for="confirmarPassword" class="form-label">Confirmar contraseña</label>
-          <input type="password" class="form-control" id="confirmarPassword" required>
-          <div class="invalid-feedback">Las contraseñas no coinciden.</div>
-        </div>
-
-        <input type="hidden" id="rol" value="cliente">
-
-        <div class="d-flex justify-content-between">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-          <button type="reset" class="btn btn-secondary">Limpiar</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Imagen -->
-    <div class="col-lg-6 text-center">
-      <img src="assets/img/registro.jpg" alt="Imagen de registro" class="img-fluid rounded shadow mt-4 mt-lg-0">
-    </div>
-
+    <h1 class="text-center mb-4">Recuperar Contraseña</h1>
+    <form id="form-recuperar" class="formulario-strongfit" novalidate>
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo electrónico registrado</label>
+    <input type="email" class="form-control" id="email" required>
+    <div class="invalid-feedback">Ingresa un correo válido.</div>
   </div>
-</main>
-  <footer id="footer" class="footer dark-background">
+
+  <div class="mb-3">
+    <label for="nuevaPassword" class="form-label">Nueva contraseña</label>
+    <input type="password" class="form-control" id="nuevaPassword" required pattern="(?=.*\d)(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,20}" title="Debe tener entre 8 y 20 caracteres, una mayúscula, un número y un símbolo especial.">
+    <div class="invalid-feedback">Debe cumplir los requisitos de seguridad.</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="confirmarPassword" class="form-label">Confirmar nueva contraseña</label>
+    <input type="password" class="form-control" id="confirmarPassword" required>
+    <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100">Recuperar</button>
+</form>
+  </main>
+
+ <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -168,7 +131,6 @@
     </div>
 
   </footer>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -187,7 +149,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/registro.js"></script>
+  <script src="assets/js/recuperar.js"></script>
 
 </body>
 

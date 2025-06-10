@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="servicios">
+<body class="perfil">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -56,135 +56,57 @@
       <!-- Botones de acción -->
       <div class="d-flex align-items-center gap-3">
         <a class="btn-getstarted" href="registro.html">Inscríbete</a>
-        <a class="bi bi-person-fill fs-4" href="login.html" title="Mi cuenta"></a>
+        <a class="bi bi-person fs-4" href="login.html" title="Mi cuenta"></a>
       </div>
 
     </div>
   </header>
+
   <main class="main">
-  
 
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Nuestros Servicios</h1>
+        <h1 class="mb-2 mb-lg-0">Carrito</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="current">Servicios</li>
+            <li><a href="index.html">Incio</a></li>
+            <li class="current">Carrito</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
-       <section id="services" class="services section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Servicios</h2>
-    <div><span>Conoce nuestros</span> <span class="description-title">Servicios</span></div>
-  </div>
-  <div class="container">
-    <div class="row gy-4">
 
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-        <div class="icon flex-shrink-0"><i class="bi bi-bicycle"></i></div>
-        <div>
-          <h4 class="title"><a class="stretched-link">Sala de Cycling</a></h4>
-          <p class="description">Bicicletas de alto nivel, sistema tipo cinema y entrenadores certificados. Energía, ritmo y tecnología.</p>
-        </div>
+    <main class="container my-5">
+    <h1 class="text-center mb-4">Carrito de Compras</h1>
+
+    <div id="carrito-vacio" class="alert alert-info text-center">Tu carrito está vacío.</div>
+
+    <div id="carrito-contenido" class="d-none">
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-carrito"></tbody>
+      </table>
+      <div class="text-end">
+        <h4>Total: $<span id="total-carrito">0</span></h4>
+        <button class="btn btn-success" id="finalizarCompra">Finalizar compra</button>
+        <button class="btn btn-danger" id="vaciarCarrito">Vaciar carrito</button>
       </div>
-
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon flex-shrink-0"><i class="bi bi-lightning"></i></div>
-        <div>
-          <h4 class="title"><a  class="stretched-link">Entrenamiento Funcional</a></h4>
-          <p class="description">Espacio libre con SYNRGY 360 XL y Glute Press única en Chile. Piso especial y equipamiento pro.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-        <div class="icon flex-shrink-0"><i class="bi bi-heart-pulse"></i></div>
-        <div>
-          <h4 class="title"><a  class="stretched-link">Zona Cardiovascular</a></h4>
-          <p class="description">3 niveles con trotadoras, elípticas y más. Música o TV para un entrenamiento entretenido y eficiente.</p>
-        </div>
-      </div>
-
-      
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-        <div class="icon flex-shrink-0"><i class="bi bi-door-closed"></i></div>
-        <div>
-          <h4 class="title"><a  class="stretched-link">Camarines y Vestidores</a></h4>
-          <p class="description">Más de 300 lockers, 16 duchas, extracción, limpieza y confort para una experiencia de primer nivel.</p>
-        </div>
-      </div>
-
-
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="800">
-        <div class="icon flex-shrink-0"><i class="bi bi-clipboard2-pulse"></i></div>
-        <div>
-          <h4 class="title"><ahref="#" class="stretched-link">Evaluación Física</ahref=></h4>
-          <p class="description">INBODY270 + test físico para crear un plan adaptado a tus metas. Ciencia al servicio del entrenamiento.</p>
-        </div>
-      </div>
-
-
-      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="1000">
-        <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
-        <div>
-          <h4 class="title"><a class="stretched-link">App StrongFit</a></h4>
-          <p class="description">Consulta clases, planes, resultados y ofertas desde cualquier lugar con nuestra app exclusiva.</p>
-        </div>
-      </div>
-
-
-
     </div>
-  </div>
-</section>
-
-   <!-- Service Details Section -->
-<section id="service-details" class="service-details section">
-  <div class="container">
-    <div class="row gy-4 align-items-center text-center">
-
-      <!-- Imágenes izquierda -->
-      <div class="col-lg-3 d-flex flex-column gap-3" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/1.jpg" alt="Imagen 1" class="img-fluid rounded shadow">
-        <img src="assets/img/2.jpg" alt="Imagen 2" class="img-fluid rounded shadow">
-        <img src="assets/img/3.jpg" alt="Imagen 3" class="img-fluid rounded shadow">
-      </div>
-
-      <!-- Texto central -->
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <h3>Nuestro gimnasio</h3>
-        <p>
-          Nuestro gimnasio, además de contar con un equipo de profesores de vasta experiencia en sistemas de entrenamiento y clases dirigidas, posee una infraestructura de excelencia que nos permite satisfacer las exigentes necesidades de nuestros socios.
-        </p>
-        <p>
-          Ofrecemos una amplia variedad de actividades que incluyen entrenamiento funcional, musculación, clases de baile, yoga y más. Cada área está equipada con tecnología de punta y mantenida bajo estrictas normas de higiene.
-        </p>
-        <p>
-          Nuestra misión es ayudarte a alcanzar tus objetivos físicos y mejorar tu bienestar general, brindando un ambiente seguro, motivador y lleno de energía positiva.
-        </p>
-       <div class="mt-4">
-          <img src="assets/img/ser.jpg" alt="Vista del gimnasio amplia" class="img-fluid w-100 rounded shadow">
-        </div>
-      </div>
-
-      <!-- Imágenes derecha -->
-      <div class="col-lg-3 d-flex flex-column gap-3" data-aos="fade-up" data-aos-delay="300">
-        <img src="assets/img/4.jpg" alt="Imagen 4" class="img-fluid rounded shadow">
-        <img src="assets/img/5.png" alt="Imagen 5" class="img-fluid rounded shadow">
-        <img src="assets/img/6.webp" alt="Imagen 6" class="img-fluid rounded shadow">
-      </div>
-
-    </div>
-  </div>
-</section>
- 
-
   </main>
 
-<footer id="footer" class="footer dark-background">
+
+ 
+
+  <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -229,8 +151,6 @@
 
   </footer>
 
-
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -249,6 +169,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/carrito.js"></script>
 
 </body>
 
